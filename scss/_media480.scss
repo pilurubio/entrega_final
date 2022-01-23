@@ -1,0 +1,126 @@
+// menor a 480        
+
+@media screen and (max-width: 480px){
+
+    #inicio{
+        
+        .titulo{    
+            font-size: 50pt;
+            letter-spacing: 5pt;
+            line-height: 50pt;
+        } 
+
+        .destacado{
+            font-size: 13pt;
+            letter-spacing: 1pt;
+            line-height: 18pt;
+        } 
+            
+    } 
+
+    #nosotros{
+        @include secciones-s;   
+    }
+
+    .grilla-nosotros{
+        
+        .texto-nosotros{
+
+            p{
+                font-size: 10pt;
+                letter-spacing: 1pt;
+                word-spacing: 1pt;
+                line-height: 14pt;
+            }
+
+        }
+        
+    }
+
+    #galeria{
+        @include secciones-s;
+    }
+
+    .grilla-galeria{
+        grid-template-columns: 1fr;
+    }
+
+    .botonera-fotos{
+        
+        .boton1{
+            font-size: 11pt;
+            letter-spacing: 2pt;
+        }
+
+    }
+
+    #actividades{
+        @include secciones-s;
+    }
+
+    .grilla-actividades{
+        
+        .mi-card{
+            
+            .alineacion-card{
+                
+                h4{
+                    font-size: 40pt;
+                    line-height: 40pt;
+                    letter-spacing: 7pt;
+                }
+
+            }
+
+        }
+
+    }
+
+    #contacto{
+        @include secciones-s;
+        padding-bottom: 50px;
+    }
+
+    .grilla-contacto{
+        
+        form{
+        
+            fieldset{
+                        
+                .botonera-formulario{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                
+                        .boton3{
+                            font-size: 11pt;
+                            letter-spacing: 2pt;
+                            width: 100px;
+                            padding: 2px 0px 0px 3px;
+                            margin-bottom: 3px;
+                        }
+                
+                }
+
+            }
+            
+        }
+
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+            .redes{
+                .iconos{
+                    width: 15px;
+                    margin: 3px;
+                }
+
+            }
+
+    }
+    
+}

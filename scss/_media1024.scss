@@ -1,0 +1,81 @@
+// menor a 1024
+
+@media screen and (max-width: 1024px){
+
+    #inicio{
+
+        .titulo{
+            font-size: 110pt;
+            letter-spacing: 20pt;
+            line-height: 110pt;
+        } 
+
+        .destacado{
+            font-size: 20pt;
+            letter-spacing: 5pt;
+            line-height: 28pt;
+        } 
+            
+    } 
+
+    .grilla-nosotros{
+        display: flex;
+        flex-direction: column;
+
+            .texto-nosotros{
+                p{
+                    margin:100px;
+                }
+
+            }
+        
+            .foto-nosotros{
+                margin: 0px 100px;
+            }
+
+    }
+
+    .grilla-galeria{
+        grid-template-columns: 1fr  1fr 1fr;
+    }
+
+    .botonera-fotos{
+    
+        .boton1{
+            margin: 7px;
+        }
+
+    }
+
+    .grilla-contacto{
+
+        form{
+                            
+            fieldset{
+                        
+                .botonera-formulario{
+                    display: flex;
+                    flex-direction: column;
+                
+                        .boton3{
+                            width: 100px;
+                            margin-bottom: 5px;
+                        }
+                
+                }
+
+            }
+            
+        }
+
+    }
+
+    footer{
+        
+        .logo-footer{
+            display: none;
+        }
+
+    }
+
+}

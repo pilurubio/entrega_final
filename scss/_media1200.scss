@@ -1,0 +1,127 @@
+// menor a 1200
+
+@media screen and (max-width: 1200px){ 
+
+    .logo-navegador{
+        height: 100px;
+        width: 100px;
+    }
+    
+    #inicio{
+
+        .titulo{
+            font-size: 130pt;
+            letter-spacing: 25pt;
+            line-height: 130pt;
+        } 
+    
+        .destacado{
+            font-size: 22pt;
+            letter-spacing: 5pt;
+            line-height: 30pt;        
+        }
+    
+    } 
+    
+    .grilla-nosotros{
+    
+        .texto-nosotros{
+    
+            p{
+                font-size: 11pt;
+                line-height: 16pt;
+            }
+    
+        }
+    
+    }
+    
+    .botonera-fotos{
+        
+        .boton1{
+            font-size: 13pt;
+            letter-spacing: 3pt;
+        }
+            
+    }
+    
+    .grilla-actividades{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    
+            .mi-card{
+                
+                .alineacion-card{
+                
+                    h4{
+                        font-size: 60pt;
+                        line-height: 60pt;
+                        letter-spacing: 10pt;
+                    }
+    
+                }
+    
+            }
+    
+    }
+    
+    .grilla-contacto{
+        
+        form{
+            
+            fieldset{
+                        
+                legend{
+                    font-size: 14pt;
+                    letter-spacing: 3pt;
+                }
+                            
+                label{
+                    font-size: 12pt;
+                    letter-spacing: 2pt;
+                }
+
+                .datos{
+                    font-size: 9pt;
+                    letter-spacing: 1pt;
+                    color: $gris;
+                    background-color: white;
+                    border: solid 1px $gris;
+                    width: 100%;
+                    height: 25px;
+                    padding: 0px 0px 0px 5px;
+                    margin-bottom: 15px;
+                }
+                
+                .textarea{
+                    height: 200px;
+                    padding: 5px 0px 0px 5px;
+                }
+                
+                .checkbox{
+                    
+                    .referencia-checkbox{
+                        font-size: 9pt;
+                        letter-spacing: 1pt;
+                        color: $azul;
+                        margin: 0px;
+                    }
+
+                }
+                            
+                .botonera-formulario{
+                        
+                    .boton3{
+                        font-size: 13pt;
+                        letter-spacing: 3pt;
+                    }
+                   
+                }
+    
+            }
+            
+        }
+    
+    }
+    
+}

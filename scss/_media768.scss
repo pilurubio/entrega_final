@@ -1,0 +1,166 @@
+// menor a 768
+
+@media screen and (max-width: 768px){
+
+    header{
+        padding: 20px 50px;
+    }
+
+    .logo-navegador{
+        height: 90px;
+        width: 90px;
+    }
+
+    #inicio{
+        
+        .titulo{
+                margin-top: 130px;
+                font-size: 90pt;
+                letter-spacing: 15pt;
+                line-height: 90pt;
+        } 
+
+        .destacado{
+            font-size: 18pt;
+            letter-spacing: 3pt;
+            line-height: 25pt;
+        } 
+            
+    } 
+
+    #nosotros{
+        @include secciones-m;   
+    }
+
+    .grilla-nosotros{
+        
+            .texto-nosotros{
+                p{
+                    margin:50px;
+                }
+
+            }
+        
+            .foto-nosotros{
+                margin: 0px 50px;
+            }
+
+    }
+
+    h2{
+        font-family: map-get($titulo-seccion-mobile, familia);
+        font-weight: map-get($titulo-seccion-mobile, peso);
+        font-size: map-get($titulo-seccion-mobile, tamaño);
+        letter-spacing: map-get($titulo-seccion-mobile, espaciado);
+        color: map-get($titulo-seccion-mobile, color);
+        border-left: map-get($titulo-seccion-mobile, borde);
+        padding-top: map-get($titulo-seccion-mobile, arriba);
+        padding-left: map-get($titulo-seccion-mobile, izquierda);
+    }
+
+    h3{
+        font-family: map-get($subtitulo-seccion-mobile, familia);
+        font-weight: map-get($subtitulo-seccion-mobile, peso);
+        font-size: map-get($subtitulo-seccion-mobile, tamaño);
+        color: map-get($subtitulo-seccion-mobile, color);
+        margin-top: map-get($subtitulo-seccion-mobile, arriba);
+        margin-left: map-get($subtitulo-seccion-mobile, izquierda);
+    }
+
+    #galeria{
+        @include secciones-m;
+    }
+
+    .grilla-galeria{
+        margin: 50px;
+    }
+
+    .botonera-fotos{
+        
+        .boton1{
+            padding: 3px 1px 1px 5px;
+            margin: 5px;
+        }
+    
+    }
+
+    #actividades{
+        @include secciones-m;
+    }
+
+    .grilla-actividades{
+        margin: 50px 50px 0px;
+
+            .mi-card{
+                
+                .alineacion-card{
+                    
+                    h4{
+                        font-size: 40pt;
+                        line-height: 40pt;
+                        letter-spacing: 7pt;
+                    }
+
+                }
+
+            }
+
+    }
+
+    #contacto{
+        @include secciones-m;
+        padding-bottom: 75px;
+    }
+
+    .grilla-contacto{
+        margin: 50px 50px 0px;
+        display: flex;
+        flex-direction: column;
+
+            form{
+                margin-bottom: 50px;
+                    
+                    fieldset{
+                        
+                        .botonera-formulario{
+                            display: flex;
+                            flex-direction: row;
+                
+                                .boton3{
+                                    width: auto;
+                                    padding: 3px 0px 0px 5px;
+                                    margin-right: 10px;
+                                    margin-bottom: 0px;
+                                }
+                
+                        }
+
+                    }
+            
+            }
+
+            .mapa{
+                height: 350px;
+            }
+
+    }
+
+    footer{
+        padding: 20px 50px;
+        
+            .copyright{
+                font-size: 8pt;
+                letter-spacing: 2pt;
+            }
+            
+            .redes{
+                .iconos{
+                    width: 20px;
+                    margin: 5px;
+                }
+
+            }
+
+    }
+
+}

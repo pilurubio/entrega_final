@@ -1,0 +1,61 @@
+// menor a 600
+
+@media screen and (max-width: 600px){
+
+    #inicio{
+
+        .titulo{
+            font-size: 70pt;
+            letter-spacing: 10pt;
+            line-height: 70pt;
+        } 
+
+        .destacado{
+            font-size: 16pt;
+            letter-spacing: 2pt;
+            line-height: 22pt;
+        } 
+            
+    } 
+
+    .grilla-galeria{
+        grid-template-columns: 1fr 1fr;
+    }    
+
+    .grilla-actividades{
+        grid-template-columns: 1fr;
+        
+            .mi-card{
+                
+                .alineacion-card{
+                    
+                    h4{
+                        font-size: 50pt;
+                        line-height: 50pt;
+                        letter-spacing: 8pt;
+                    }
+
+                }
+
+            }
+
+    }
+
+    footer{
+        
+        .copyright{
+            font-size: 7pt;
+            letter-spacing: 1pt;
+        }
+            
+        .redes{
+            .iconos{
+                width: 18px;
+                margin: 4px;
+            }
+    
+        }
+    
+    }
+
+}

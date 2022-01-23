@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url(../assets/fonts/BebasNeue-Regular.ttf); }
+
+body {
+  background-color: #fafafa; }
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  padding: 25px 100px;
+  background-color: rgba(250, 250, 250, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo-navegador {
+  height: 110px;
+  width: 110px; }
+
+.mi-navegador {
+  display: flex;
+  justify-content: flex-end; }
+  .mi-navegador .mi-boton {
+    color: rgba(13, 110, 253, 0.25); }
+  .mi-navegador .mi-width {
+    width: max-content !important; }
+
+.desplegable {
+  position: absolute;
+  top: 50;
+  right: 0;
+  background-color: #fafafa; }
+
+.mis-items {
+  padding: 5px 10px; }
+
+.mis-links, .submenu, .submenu-todo {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 13pt;
+  letter-spacing: 3pt;
+  color: #243746 !important;
+  text-align: center;
+  padding: 5px 3px 3px 7px !important;
+  margin: 10px 0px; }
+  .mis-links:hover, .submenu:hover, .submenu-todo:hover {
+    background-color: #f3e500;
+    transition: 0.5s; }
+
+.submenu, .submenu-todo {
+  font-size: 11.5pt;
+  padding: 5px !important;
+  margin: 0px; }
+
+.submenu-todo {
+  font-size: 11pt; }
+
+#inicio {
+  background-image: url(../assets/img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #inicio .titulo {
+    margin-top: 160px;
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    font-size: 150pt;
+    letter-spacing: 30pt;
+    line-height: 150pt;
+    color: rgba(250, 250, 250, 0.9);
+    text-align: center; }
+  #inicio .destacado {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 25pt;
+    letter-spacing: 7pt;
+    line-height: 35pt;
+    color: #fafafa;
+    text-align: center; }
+    #inicio .destacado .resaltado {
+      color: #243746;
+      background-color: #f3e500; }
+
+#nosotros {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 100px;
+  background-image: url(../assets/img/fondo-secciones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+h2 {
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 50pt;
+  letter-spacing: 7pt;
+  color: #243746;
+  border-left: solid #f3e500 85px;
+  padding-top: 5px;
+  padding-left: 15px; }
+
+h3 {
+  font-family: "Averia Serif Libre";
+  font-weight: 400;
+  font-size: 22pt;
+  color: #243746;
+  margin-top: 20px;
+  margin-left: 100px; }
+  h3 .subrayado {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #f3e500;
+    text-decoration-thickness: 5px; }
+
+.grilla-nosotros {
+  display: grid;
+  grid-template-areas: "texto foto";
+  grid-template-columns: 40% auto;
+  column-gap: 100px;
+  align-items: center; }
+  .grilla-nosotros .texto-nosotros {
+    grid-area: texto; }
+    .grilla-nosotros .texto-nosotros p {
+      margin-top: 100px;
+      margin-left: 100px;
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 12pt;
+      letter-spacing: 1.5pt;
+      word-spacing: 2pt;
+      line-height: 18pt;
+      color: #243746; }
+  .grilla-nosotros .foto-nosotros {
+    grid-area: foto;
+    margin-right: 100px; }
+    .grilla-nosotros .foto-nosotros .foto-guia {
+      width: 100%; }
+
+#galeria {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/img/fondo-secciones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.grilla-galeria {
+  margin: 100px 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px; }
+  .grilla-galeria .div-galeria {
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s; }
+    .grilla-galeria .div-galeria:hover {
+      filter: opacity(0.5); }
+    .grilla-galeria .div-galeria .foto-galeria {
+      width: 100%;
+      transition: 1s; }
+      .grilla-galeria .div-galeria .foto-galeria:hover {
+        filter: grayscale(100%);
+        transform: scale(1.5); }
+
+.botonera-fotos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .botonera-fotos .boton1 {
+    border: none;
+    border-radius: 0;
+    font-family: "Bebas Neue";
+    font-size: 15pt;
+    letter-spacing: 5pt;
+    text-align: center;
+    color: #fafafa;
+    background-color: gainsboro;
+    cursor: pointer;
+    padding: 5px 3px 3px 10px;
+    margin: 10px; }
+  .botonera-fotos .btn-check:hover + .boton1 {
+    color: #243746;
+    background-color: rgba(243, 229, 0, 0.5); }
+  .botonera-fotos .btn-check:checked + .boton1 {
+    color: #243746;
+    background-color: #f3e500; }
+
+#actividades {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/img/fondo-secciones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.grilla-actividades {
+  margin: 100px 100px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px; }
+  .grilla-actividades .mi-card {
+    border: none;
+    cursor: pointer;
+    transition: 1s; }
+    .grilla-actividades .mi-card:hover {
+      transform: scale(1.1); }
+    .grilla-actividades .mi-card .alineacion-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px; }
+      .grilla-actividades .mi-card .alineacion-card h4 {
+        font-family: "Bebas Neue";
+        font-weight: lighter;
+        font-size: 40pt;
+        line-height: 40pt;
+        letter-spacing: 7pt;
+        padding-top: 10px;
+        color: #fafafa; }
+
+#contacto {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  background-image: url(../assets/img/fondo-secciones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.grilla-contacto {
+  margin: 100px 100px 0px;
+  display: grid;
+  grid-template-columns: 40% auto;
+  column-gap: 100px; }
+  .grilla-contacto form {
+    width: 100%; }
+    .grilla-contacto form fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column; }
+      .grilla-contacto form fieldset legend, .grilla-contacto form fieldset label, .grilla-contacto form fieldset .datos, .grilla-contacto form fieldset .textarea, .grilla-contacto form fieldset .checkbox .referencia-checkbox {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 16pt;
+        letter-spacing: 4pt;
+        color: #fafafa;
+        background-color: #243746;
+        padding: 5px 10px;
+        margin-bottom: 20px; }
+      .grilla-contacto form fieldset label, .grilla-contacto form fieldset .datos, .grilla-contacto form fieldset .textarea, .grilla-contacto form fieldset .checkbox .referencia-checkbox {
+        font-size: 13pt;
+        letter-spacing: 3pt;
+        color: #243746;
+        background-color: transparent;
+        padding: 0px;
+        margin-bottom: 5px; }
+      .grilla-contacto form fieldset .datos, .grilla-contacto form fieldset .textarea {
+        font-size: 9pt;
+        letter-spacing: 1pt;
+        color: gainsboro;
+        background-color: white;
+        border: solid 1px gainsboro;
+        width: 100%;
+        height: 25px;
+        padding: 0px 0px 0px 5px;
+        margin-bottom: 15px; }
+      .grilla-contacto form fieldset .textarea {
+        height: 200px;
+        padding: 5px 0px 0px 5px; }
+      .grilla-contacto form fieldset .checkbox {
+        margin-bottom: 20px; }
+        .grilla-contacto form fieldset .checkbox .referencia-checkbox {
+          font-size: 9pt;
+          letter-spacing: 1pt;
+          color: #243746;
+          margin: 0px; }
+      .grilla-contacto form fieldset .botonera-formulario {
+        display: flex;
+        flex-direction: row; }
+        .grilla-contacto form fieldset .botonera-formulario .boton3 {
+          border: none;
+          border-radius: 0;
+          font-family: "Bebas Neue";
+          font-size: 15pt;
+          letter-spacing: 5pt;
+          text-align: center;
+          color: #243746;
+          cursor: pointer;
+          padding: 3px 0px 0px 7px;
+          margin-right: 15px; }
+          .grilla-contacto form fieldset .botonera-formulario .boton3:hover {
+            background-color: #f3e500;
+            transition: 0.5s; }
+
+footer {
+  padding: 25px 100px;
+  background-color: #131e29;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  footer .logo-footer {
+    height: 70px;
+    width: 70px; }
+  footer .copyright {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 9pt;
+    letter-spacing: 3pt;
+    color: #fafafa;
+    margin: 0px; }
+  footer .redes {
+    display: flex;
+    flex-direction: row; }
+    footer .redes .iconos {
+      width: 22px;
+      margin: 7px; }
+
+@media screen and (max-width: 1200px) {
+  .logo-navegador {
+    height: 100px;
+    width: 100px; }
+  #inicio .titulo {
+    font-size: 130pt;
+    letter-spacing: 25pt;
+    line-height: 130pt; }
+  #inicio .destacado {
+    font-size: 22pt;
+    letter-spacing: 5pt;
+    line-height: 30pt; }
+  .grilla-nosotros .texto-nosotros p {
+    font-size: 11pt;
+    line-height: 16pt; }
+  .botonera-fotos .boton1 {
+    font-size: 13pt;
+    letter-spacing: 3pt; }
+  .grilla-actividades {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; }
+    .grilla-actividades .mi-card .alineacion-card h4 {
+      font-size: 60pt;
+      line-height: 60pt;
+      letter-spacing: 10pt; }
+  .grilla-contacto form fieldset legend, .grilla-contacto form fieldset label, .grilla-contacto form fieldset .datos, .grilla-contacto form fieldset .textarea, .grilla-contacto form fieldset .checkbox .referencia-checkbox {
+    font-size: 14pt;
+    letter-spacing: 3pt; }
+  .grilla-contacto form fieldset label, .grilla-contacto form fieldset .datos, .grilla-contacto form fieldset .textarea, .grilla-contacto form fieldset .checkbox .referencia-checkbox {
+    font-size: 12pt;
+    letter-spacing: 2pt; }
+  .grilla-contacto form fieldset .datos, .grilla-contacto form fieldset .textarea {
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    color: gainsboro;
+    background-color: white;
+    border: solid 1px gainsboro;
+    width: 100%;
+    height: 25px;
+    padding: 0px 0px 0px 5px;
+    margin-bottom: 15px; }
+  .grilla-contacto form fieldset .textarea {
+    height: 200px;
+    padding: 5px 0px 0px 5px; }
+  .grilla-contacto form fieldset .checkbox .referencia-checkbox {
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    color: #243746;
+    margin: 0px; }
+  .grilla-contacto form fieldset .botonera-formulario .boton3 {
+    font-size: 13pt;
+    letter-spacing: 3pt; } }
+
+@media screen and (max-width: 1024px) {
+  #inicio .titulo {
+    font-size: 110pt;
+    letter-spacing: 20pt;
+    line-height: 110pt; }
+  #inicio .destacado {
+    font-size: 20pt;
+    letter-spacing: 5pt;
+    line-height: 28pt; }
+  .grilla-nosotros {
+    display: flex;
+    flex-direction: column; }
+    .grilla-nosotros .texto-nosotros p {
+      margin: 100px; }
+    .grilla-nosotros .foto-nosotros {
+      margin: 0px 100px; }
+  .grilla-galeria {
+    grid-template-columns: 1fr  1fr 1fr; }
+  .botonera-fotos .boton1 {
+    margin: 7px; }
+  .grilla-contacto form fieldset .botonera-formulario {
+    display: flex;
+    flex-direction: column; }
+    .grilla-contacto form fieldset .botonera-formulario .boton3 {
+      width: 100px;
+      margin-bottom: 5px; }
+  footer .logo-footer {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 50px; }
+  .logo-navegador {
+    height: 90px;
+    width: 90px; }
+  #inicio .titulo {
+    margin-top: 130px;
+    font-size: 90pt;
+    letter-spacing: 15pt;
+    line-height: 90pt; }
+  #inicio .destacado {
+    font-size: 18pt;
+    letter-spacing: 3pt;
+    line-height: 25pt; }
+  #nosotros {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column; }
+  .grilla-nosotros .texto-nosotros p {
+    margin: 50px; }
+  .grilla-nosotros .foto-nosotros {
+    margin: 0px 50px; }
+  h2 {
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    font-size: 35pt;
+    letter-spacing: 4pt;
+    color: #243746;
+    border-left: solid #f3e500 40px;
+    padding-top: 5px;
+    padding-left: 10px; }
+  h3 {
+    font-family: "Averia Serif Libre";
+    font-weight: 400;
+    font-size: 18pt;
+    color: #243746;
+    margin-top: 20px;
+    margin-left: 50px; }
+  #galeria {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column; }
+  .grilla-galeria {
+    margin: 50px; }
+  .botonera-fotos .boton1 {
+    padding: 3px 1px 1px 5px;
+    margin: 5px; }
+  #actividades {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column; }
+  .grilla-actividades {
+    margin: 50px 50px 0px; }
+    .grilla-actividades .mi-card .alineacion-card h4 {
+      font-size: 40pt;
+      line-height: 40pt;
+      letter-spacing: 7pt; }
+  #contacto {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px; }
+  .grilla-contacto {
+    margin: 50px 50px 0px;
+    display: flex;
+    flex-direction: column; }
+    .grilla-contacto form {
+      margin-bottom: 50px; }
+      .grilla-contacto form fieldset .botonera-formulario {
+        display: flex;
+        flex-direction: row; }
+        .grilla-contacto form fieldset .botonera-formulario .boton3 {
+          width: auto;
+          padding: 3px 0px 0px 5px;
+          margin-right: 10px;
+          margin-bottom: 0px; }
+    .grilla-contacto .mapa {
+      height: 350px; }
+  footer {
+    padding: 20px 50px; }
+    footer .copyright {
+      font-size: 8pt;
+      letter-spacing: 2pt; }
+    footer .redes .iconos {
+      width: 20px;
+      margin: 5px; } }
+
+@media screen and (max-width: 600px) {
+  #inicio .titulo {
+    font-size: 70pt;
+    letter-spacing: 10pt;
+    line-height: 70pt; }
+  #inicio .destacado {
+    font-size: 16pt;
+    letter-spacing: 2pt;
+    line-height: 22pt; }
+  .grilla-galeria {
+    grid-template-columns: 1fr 1fr; }
+  .grilla-actividades {
+    grid-template-columns: 1fr; }
+    .grilla-actividades .mi-card .alineacion-card h4 {
+      font-size: 50pt;
+      line-height: 50pt;
+      letter-spacing: 8pt; }
+  footer .copyright {
+    font-size: 7pt;
+    letter-spacing: 1pt; }
+  footer .redes .iconos {
+    width: 18px;
+    margin: 4px; } }
+
+@media screen and (max-width: 480px) {
+  #inicio .titulo {
+    font-size: 50pt;
+    letter-spacing: 5pt;
+    line-height: 50pt; }
+  #inicio .destacado {
+    font-size: 13pt;
+    letter-spacing: 1pt;
+    line-height: 18pt; }
+  #nosotros {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column; }
+  .grilla-nosotros .texto-nosotros p {
+    font-size: 10pt;
+    letter-spacing: 1pt;
+    word-spacing: 1pt;
+    line-height: 14pt; }
+  #galeria {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column; }
+  .grilla-galeria {
+    grid-template-columns: 1fr; }
+  .botonera-fotos .boton1 {
+    font-size: 11pt;
+    letter-spacing: 2pt; }
+  #actividades {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column; }
+  .grilla-actividades .mi-card .alineacion-card h4 {
+    font-size: 40pt;
+    line-height: 40pt;
+    letter-spacing: 7pt; }
+  #contacto {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px; }
+  .grilla-contacto form fieldset .botonera-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grilla-contacto form fieldset .botonera-formulario .boton3 {
+      font-size: 11pt;
+      letter-spacing: 2pt;
+      width: 100px;
+      padding: 2px 0px 0px 3px;
+      margin-bottom: 3px; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer .redes .iconos {
+      width: 15px;
+      margin: 3px; } }
